@@ -129,7 +129,23 @@ form button:hover ,
 
 
 
+/* Reciepe Details */
 
+.recipe-details{
+    display: none;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #694c2f;
+    border-radius: 12px;
+    width: 40%;
+    height: 40%;
+    font-size: 20px;
+    
+
+
+}
 
 
 
