@@ -24,9 +24,10 @@ async function fetchRecipies(query){
         <p>Belongs to <span>${meals.strCategory}</span> Category</p>
         `
 
-
+        const button= document.createElement(`button`);
+        button.textContent="View Recipe";
+        recipeDiv.appendChild(button)
         recipeContainer.appendChild(recipeDiv)
-
     });
 
 
