@@ -162,18 +162,25 @@ form button:hover ,
 
 .recipeName{
     text-align: center;
+    text-transform: uppercase;
     text-decoration: underline;
+
 }
 
 .ingredientsList li{
     margin-bottom: 10px;
-    margin-left: -20px;
+    margin-left: 20px;
+    /* list-style-type: upper-roman; */
 }
 
 .recipeInstructions p{
     line-height: 20px;
 
 }
+
+
+
+
 
 
 
