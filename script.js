@@ -47,17 +47,57 @@ async function fetchRecipies(query){
 
 }
 
+
+
+// function to fetch ingredients
+const fetchIngredients = (meals) => {
+    
+  let ingredientsList = "";
+
+  for (let i = 1; i <= 20; i++) {
+    const ingredient = meals[`strIngredient${i}`];
+    
+    if (ingredient) {
+        const measure = meals[`strMeasure${i}`];
+        ingredientsList += `<li>${measure} ${ingredient}</li>`;
+    }
+    else{
+        break
+    }
+  }
+
+  return ingredientsList;
+};
+
+
+
 const openRecipePopup =(meals)=>{
     recipeDetailsContent.innerHTML=`
-    <h2>${meals.strMeal}</h2>
-    
+    <h2 class="recipeName">${meals.strMeal}</h2>
+    <h3>Ingredents:</h3>
+    <ul class="ingredientsList">${fetchIngredients(meals)}</ul>
+    <div class="recipeInstructions">
+        <h3>Instructions:</h3>
+        <p>${meals.strInstructions }</p>
+    <div/>
     `
+
+    
 
     recipeDetails.style.display="block";
 
 
 
 }
+
+
+// close btn
+recipeCloseBtn.addEventListener("click",()=>{
+    recipeDetails.style.display="none";
+
+})
+
+
 
 
 searchBtn.addEventListener("click",(e)=>{
