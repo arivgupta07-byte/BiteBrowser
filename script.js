@@ -15,6 +15,10 @@ async function fetchRecipies(query){
         const response= await data.json();
         // console.log(response.meals[0])
         // console.log(r esponse.meals)
+        if (!response.meals){
+        recipeContainer.innerHTML = `<h2>No recipes found.</h2>`;
+        return;
+                        }
         recipeContainer.innerHTML=``;
         
         response.meals.forEach(meals =>{
@@ -113,10 +117,12 @@ searchBtn.addEventListener("click",(e)=>{
         recipeContainer.innerHTML=`
         <h2>Type the meal in the search box.</h2>
         `;
-        return;
 
     }
     fetchRecipies(searchInput)
 
     
 })
+
+// default
+fetchRecipies("cake");
