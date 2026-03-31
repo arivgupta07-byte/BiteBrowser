@@ -116,7 +116,8 @@ searchBtn.addEventListener("click",(e)=>{
     if(!searchInput){
         recipeContainer.innerHTML=`
         <h2>Type the meal in the search box.</h2>
-        `;
+        `
+        return;
 
     }
     fetchRecipies(searchInput)
@@ -125,4 +126,4 @@ searchBtn.addEventListener("click",(e)=>{
 })
 
 // default
-fetchRecipies("cake");
+fetchRecipies("soup");
