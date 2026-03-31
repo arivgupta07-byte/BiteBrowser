@@ -30,5 +30,3 @@ It demonstrates JavaScript concepts like API integration, DOM manipulation, and 
 
 TheMealDB API  
 https://www.themealdb.com/api.php  
-
-Endpoint used:
