@@ -58,7 +58,7 @@ form button{
     transition: background-color 0.2s ease-in-out;
 }
 form button:hover , 
-.recipe button:hover{
+.recipe button:hover ,.recipe-close-btn:hover{
     background-color: #ff5c5c ;
 
 }
@@ -164,11 +164,12 @@ form button:hover ,
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
+    
 
 }
 
 .ingredientsList li{
-    margin-bottom: 10px;
+    margin-top: 10px;
     margin-left: 20px;
     /* list-style-type: upper-roman; */
 }
@@ -177,6 +178,13 @@ form button:hover ,
     line-height: 20px;
 
 }
+
+.recipeName,.ingredientsList,
+.recipeInstructions{
+    margin-bottom: 20px;
+
+}
+
 
 
 .recipe-close-btn{
