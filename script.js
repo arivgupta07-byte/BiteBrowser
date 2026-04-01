@@ -89,7 +89,7 @@ const openRecipePopup =(meals)=>{
     <div class="recipeInstructions">
         <h3>Instructions:</h3>
         <p>${meals.strInstructions }</p>
-    <div/>
+    </div>
     `
 
     
