@@ -78,6 +78,9 @@ async function fetchRecipies(query){
 
 //   return ingredientsList;
 // };
+
+// function to fetch ingredients
+
 const fetchIngredients = (meal) => {
   let x = "";
 
