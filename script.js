@@ -60,24 +60,45 @@ async function fetchRecipies(query){
 
 
 // function to fetch ingredients
-const fetchIngredients = (meals) => {
+// const fetchIngredients = (meals) => {
     
-  let ingredientsList = "";
+//   let ingredientsList = "";
 
-  for (let i = 1; i <= 20; i++) {
-    const ingredient = meals[`strIngredient${i}`];
+//   for (let i = 1; i <= 20; i++) {
+//     const ingredient = meals[`strIngredient${i}`];
     
-    if (ingredient) {
-        const measure = meals[`strMeasure${i}`];
-        ingredientsList += `<li>${measure} ${ingredient}</li>`;
-    }
-    else{
-        break
-    }
-  }
+//     if (ingredient) {
+//         const measure = meals[`strMeasure${i}`];
+//         ingredientsList += `<li>${measure} ${ingredient}</li>`;
+//     }
+//     else{
+//         break
+//     }
+//   }
 
-  return ingredientsList;
+//   return ingredientsList;
+// };
+const fetchIngredients = (meal) => {
+  let x = "";
+
+  Object.keys(meal)
+    .filter(
+      (key) =>
+        key.slice(0, 13)==="strIngredient" &&
+        meal[key] &&
+        meal[key].trim()
+    )
+    .forEach((key) => {
+      const index = key.replace("strIngredient", "");
+      const ingredient = meal[key];
+      const measure = meal[`strMeasure${index}`] || "";
+
+      x += `<li>${measure} ${ingredient}</li>`;
+    });
+
+  return x;
 };
+
 
 
 
