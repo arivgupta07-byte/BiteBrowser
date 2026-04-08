@@ -5,39 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>BiteBrowser</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html"><h1>BiteBrowser</h1></a>
+            <a href="index.html"><h1>BITEBROWSER</h1></a>
             <form>
                 <input type="text" placeholder="Search for recipes" class="searchBox">
                 <button type="submit" class="searchBtn">Search</button>
             </form>
         </nav>
     </header>
+
     <main>
         <section>
+
+            <div style="text-align:center; margin:10px;">
+                <button class="sortBtn">Sort by ID ↑</button>
+
+                <select class="filterSelect">
+                    <option value="">Filter by Category</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                </select>
+            </div>
+
             <div class="recipe-container">
                 <h2>Search your favourite recipes...</h2>
             </div>
+
             <div class="recipe-details">
                 <button type="button" class="recipe-close-btn">
                     <i class="fas fa-times"></i>
                 </button>
                 <div class="recipe-details-content"></div>
-
             </div>
+
         </section>
     </main>
 
-     <footer>
-        <div class="foot-panel1">
-            Back to Top
-        </div>
+    <footer>
+        <div class="foot-panel1">Back to Top</div>
         <div class="foot-panel2">
             <ul>
                 <p>GET TO KNOW US</p>
@@ -52,13 +63,10 @@
                 <a>FAQ</a>
                 <a>T&C</a>
                 <a>Terms Of Use</a>
-                
                 <a>Privacy policy</a>
             </ul>
-            
             <ul>
-                <p>SOCIAL</p>
-                <br>
+                <p>SOCIAL</p><br>
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-x-twitter"></i>
