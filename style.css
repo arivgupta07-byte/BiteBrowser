@@ -17,7 +17,7 @@ main{
     flex: 1;
 }
 
-/* NAV */
+/* navbar */
 header nav{
     background-color: #212121;
     padding: 20px;
@@ -52,7 +52,7 @@ form button{
     cursor: pointer;
 }
 
-/* GRID */
+/* recipe */
 .recipe-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -63,7 +63,7 @@ form button{
     justify-items: center;
 }
 
-/* CARD */
+/*  */
 .recipe{
     background-color: #fff;
     color: #000;
@@ -111,7 +111,7 @@ form button{
     border-radius: 5px;
 }
 
-/* POPUP */
+/*  */
 .recipe-details{
     display: none;
     position: fixed;
@@ -130,7 +130,7 @@ form button{
     padding: 20px;
 }
 
-/* ⭐ centered title */
+/*  */
 .recipeName{
     text-align: center;
     text-transform: uppercase;
@@ -162,7 +162,7 @@ form button{
     background-color: #ff5c5c;
 }
 
-/* FOOTER */
+/* footer */
 footer{
     margin-top: 0;
 }
@@ -192,7 +192,7 @@ ul a{
     color: #ddd;
 }
 
-/* CONTROLS */
+/* sort */
 .sortBtn{
     padding:10px 15px;
     background-color:#f44336;

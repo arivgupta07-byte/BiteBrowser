@@ -33,7 +33,7 @@ async function fetchRecipies(query){
 }
 
 
-// card
+
 function createCard(meals){
     const recipeDiv= document.createElement("div");
     recipeDiv.className = "recipe";
@@ -123,13 +123,13 @@ const openRecipePopup =(meals)=>{
 }
 
 
-// close
+// close btn
 recipeCloseBtn.addEventListener("click",()=>{
     recipeDetails.style.display="none";
 })
 
 
-// search
+// search btn
 searchBtn.addEventListener("click",(e)=>{
     e.preventDefault()
     const searchInput=searchBox.value.trim();
