@@ -29,6 +29,7 @@ async function fetchRecipies(query){
             <img src="${meals.strMealThumb}">
             <h3><span>${meals.strMeal}</span></h3>
             <p><span>${meals.strArea}</span> Dish</p>
+            <p>ID : <span>${meals.idMeal}</span></p>
             <p>Belongs to <span>${meals.strCategory}</span> Category</p>
             `
             
