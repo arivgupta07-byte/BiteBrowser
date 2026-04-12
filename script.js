@@ -93,7 +93,7 @@ const fetchIngredients = (meal) => {
   let ingredients = "";
 
   Object.keys(meal)
-    .filter(key => key.startsWith("strIngredient") && meal[key])
+    .filter(key => key.slice(0,13) === "strIngredient" && meal[key])
     .forEach(key => {
       const index = key.replace("strIngredient", "");
       const ingredient = meal[key];
